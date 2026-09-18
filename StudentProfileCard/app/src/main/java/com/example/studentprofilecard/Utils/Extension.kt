@@ -9,7 +9,6 @@ import android.widget.Toast
         this >= 3.2 -> "Giỏi"
         this >= 2.5 -> "Khá" else -> "Trung bình"
     }
-    // Extension hiển thị Toast cho Context
     fun Context.toast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
