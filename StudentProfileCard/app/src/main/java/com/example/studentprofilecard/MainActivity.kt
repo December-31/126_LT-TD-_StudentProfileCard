@@ -11,10 +11,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private var currentStudent = Student(
-        id = "22505120005",
-        name = "Nguyen Van An",
-        className = "DD2026",
-        email = "anv@ute.udn.vn",
+        id = "2415053122304",
+        name = "Trương Văn Cường",
+        className = "24T3",
+        email = "22415053122304@sv.ute.udn.vn",
         gpa = 3.8
     )
 
@@ -34,8 +34,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             currentStudent = currentStudent.copy(gpa = newGpa)
-            bindStudentData(currentStudent) // Vẽ lại dữ liệu mới lên Views
-
+            bindStudentData(currentStudent)
             toast("Cập nhật điểm thành công!")
         }
     }
